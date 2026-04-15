@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f5f1e8;
+  --bg-2: #ebe4d3;
+  --fg: #1a1828;
+  --muted: #6b6478;
+  --border: #d9d0bd;
+  --card: #fffdf7;
+  --accent: #c97b5a;
+  --accent-2: #3d5a3a;
+}
+
+.dark {
+  --bg: #0d0c1d;
+  --bg-2: #15142a;
+  --fg: #f5f1e8;
+  --muted: #9b94aa;
+  --border: #2a2842;
+  --card: #15142a;
+  --accent: #d8896a;
+  --accent-2: #9bb59b;
+}
+
+html, body, #root { height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Manrope', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 10% 0%, rgba(201,123,90,0.08), transparent 40%),
+    radial-gradient(circle at 90% 100%, rgba(61,90,58,0.08), transparent 40%);
+  background-attachment: fixed;
+}
+
+.font-display { font-family: 'Fraunces', serif; letter-spacing: -0.02em; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  padding: .65rem 1.1rem; border-radius: .75rem;
+  font-weight: 600; font-size: .9rem;
+  transition: transform .15s, background .15s, opacity .15s;
+}
+.btn:active { transform: scale(0.97); }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { opacity: .92; }
+.btn-ghost { background: transparent; color: var(--fg); border: 1px solid var(--border); }
+.btn-ghost:hover { background: var(--bg-2); }
+
+.input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  padding: .7rem .9rem;
+  border-radius: .65rem;
+  font-size: .95rem;
+  outline: none;
+  transition: border-color .15s;
+}
+.input:focus { border-color: var(--accent); }
+
+.badge {
+  display: inline-flex; align-items: center; gap: .25rem;
+  padding: .15rem .55rem; border-radius: 999px;
+  font-size: .72rem; font-weight: 600;
+  background: var(--bg-2); color: var(--muted);
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+
+.cell { width: 14px; height: 14px; border-radius: 3px; background: var(--bg-2); }
