@@ -288,6 +288,7 @@ Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more informati
 
 **Built for everyone working on becoming a little better, every day.**
 
+Made with love by N S Balaji, Kavya Reddy, Utpal Raj
 ⭐ Star this repo if you found it helpful!
 
 </div>
