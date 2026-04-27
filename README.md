@@ -288,7 +288,10 @@ Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more informati
 
 **Built for everyone working on becoming a little better, every day.**
 
+<<<<<<< HEAD
 Made with love by N S Balaji, Kavya Reddy, Utpal Raj
+=======
+>>>>>>> 2789b33 (changes done)
 ⭐ Star this repo if you found it helpful!
 
 </div>
